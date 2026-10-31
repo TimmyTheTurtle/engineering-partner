@@ -20,6 +20,8 @@ This repository is an initial draft. It defines one agent and a small reference 
 
 Paths beginning with `~` refer to the home directory on the machine or remote environment where the Copilot harness runs. Instructions in a project and other applicable user settings still apply. Installing the files does not automatically synchronize them with this repository; pull changes and update your installed copies when desired. A plugin or other distribution mechanism can be considered later.
 
+For a project-scoped installation, place `ada.agent.md` under `.github/agents/` and the entire skill directory under `.github/skills/engineering-method/`. Ada looks for project references first, then the personal location. The project copy is independent of this repository and does not update automatically.
+
 ## Test before relying on it
 
 Check that Ada appears in the Copilot agent picker; ask her to explore a design without edits; invoke the skill and check which reference she reads; and compare a normal Copilot session to ensure the skill is not automatically activated. Test a handoff in a disposable project, including the timestamp and existing project conventions. Behavior and discovery depend on your Copilot/VS Code version and configuration; this draft has not been validated in a live session.
